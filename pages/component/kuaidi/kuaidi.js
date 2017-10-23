@@ -29,12 +29,7 @@ Page({
       focus: true
     })
   },
-  bindKeyInput: function (e) {
-    console.log(e.detail.value)
-    this.setData({
-      kuaidi_data: e.detail.value
-    })
-  },
+   
   kuaidiInput:function(e){
     // console.log(e.detail.value)
     this.setData({
