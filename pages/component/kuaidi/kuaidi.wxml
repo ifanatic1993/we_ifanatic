@@ -1,0 +1,23 @@
+<view class="container">
+  <text>快递信息查询</text>
+</view>
+<view class="nezha_table">
+  <view class="select_name">
+     <text>请选择快递公司：</text>
+     <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+  </view>
+   <view class="select_name">
+     <text>请输入快递单号：</text>
+     <input type="text" maxlength="30" bindinput="kuaidiInput"  auto-focus/>
+  </view>
+  <button bindtap="find">确认</button>
+</view>
+<view class="info">
+ <block wx:for="{{data_items}}" value="{{index}}">
+  <view> {{data_items[index].time}}:  {{data_items[index].context}}</view>
+</block>
+</view>

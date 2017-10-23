@@ -1,12 +1,29 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/component/kuaidi/kuaidi",
+    "pages/component/index/index",
+    "pages/component/app/app",
+    "pages/component/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "哪吒",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "selectedColor": "#AB956D",
+    "borderStyle": "#f5f5f5",
+    "backgroundColor": "#f5f5f5",
+    "list": [{
+      "pagePath": "pages/component/app/app",
+      "text": "app"
+    },
+    {
+        "pagePath": "pages/component/kuaidi/kuaidi",
+        "text": "快递信息入口"
+    }
+    ]
   }
 }
